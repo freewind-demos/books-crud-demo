@@ -4,7 +4,7 @@ import play.mvc.*;
 import play.mvc.Http.*;
 import models.*;
 
-public class UsersTest extends FunctionalTest {
+public class BooksTest extends FunctionalTest {
 
     @Test
     public void testThatIndexPageWorks() {

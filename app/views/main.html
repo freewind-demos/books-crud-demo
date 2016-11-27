@@ -10,6 +10,16 @@
 </head>
 <body>
 <div id="main">
+    <div>
+        #{if flash.success}
+        <div>${flash.success}</div>
+        #{/if}
+        #{if flash.error}
+        <div>${flash.error}</div>
+        #{/if}
+    </div>
+
+    #{include './header.html' /}
     #{doLayout /}
 </div>
 

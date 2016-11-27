@@ -13,9 +13,14 @@ public class User extends Model {
 
     public String address;
 
-    public User(String email, String name, String address) {
+    public String password;
+
+    public Boolean isAdmin = false;
+
+    public User(String name, String password, String email, String address) {
         this.email = email;
         this.name = name;
         this.address = address;
+        this.password = password;
     }
 }

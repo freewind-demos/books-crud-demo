@@ -1,0 +1,29 @@
+#{extends 'main.html' /}
+#{set title:'List All Books' /}
+
+<h1>List All Books</h1>
+
+<div>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Operations</th>
+        </tr>
+        #{list books, as: 'book'}
+        <tr>
+            <td>${book.title}</td>
+            <td>${book.description}</td>
+            <td>
+                <a href="@{Books.show(book.id)}">Show</a>
+                <a href="@{Books.editPage(book.id)}">Edit</a>
+                <a href="@{Books.delete(book.id)}">Delete</a>
+            </td>
+        </tr>
+        #{/list}
+    </table>
+</div>
+
+<p>
+    <a href="@{Books.createPage()}">New Book</a>
+</p>

@@ -1,4 +1,4 @@
-Simple Users CRUD Demo
+Simple Books CRUD Demo
 ======================
 
 Powered by [play1](https://github.com/playframework/play1)
@@ -6,7 +6,7 @@ Powered by [play1](https://github.com/playframework/play1)
 Download and install play1, then:
 
 ```
-cd users-crud-demo
+cd books-crud-demo
 play run
 ```
 

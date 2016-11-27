@@ -1,0 +1,6 @@
+#{if session.get('username')}
+<div>
+    Welcome, ${session.get('username')},
+    <a href="@{Application.logout}">Logout</a>
+</div>
+#{/if}
